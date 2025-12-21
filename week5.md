@@ -60,7 +60,7 @@ Implement advanced security measures and create monitoring infrastructure for th
 5. **Remote Monitoring**:
    - A script to gather system performance metrics remotely.
    - Evidence: Real-time output showing CPU, memory, and disk I/O usage.
-  !  [monitoring](5.png)
+  ![monitoring](5.png)
 
 ---
 
