@@ -66,5 +66,7 @@ uname
 lsb_release
 ![lsb release](lsb.png)
 
+![final](final.png)
+
 ## Conclusion
 Ubuntu Desktop was chosen for its ease of use, stability, and compatibility with the selected server distribution.
