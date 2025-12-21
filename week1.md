@@ -19,6 +19,7 @@ Host Machine
 |
 |-- NAT Network (Internet Access)
 
+![diagram](network.png)
 ## Purpose
 - Server provides centralized services
 - Workstation is used for administration and testing
