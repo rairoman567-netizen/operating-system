@@ -7,6 +7,7 @@ The system consists of two virtual machines hosted on VirtualBox:
 - Ubuntu Desktop (acts as the workstation)
 
 Both systems communicate over a Host-Only network while maintaining internet access through NAT.
+![system architecture](diagram.png)
 
 ## Logical Architecture Diagram
 
