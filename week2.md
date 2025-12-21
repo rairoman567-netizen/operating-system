@@ -115,10 +115,13 @@ This checklist ensures that the system is securely configured, reducing the risk
 - **Rate Limiting**: Implement rate limiting on sensitive ports (e.g., SSH) to prevent brute force attacks.
 - **Default Deny Policy**: Set the firewall to deny all incoming by default and allow only specific services.
 - **Log Dropped Packets**: Enable logging of dropped packets to detect potential attack attempts.
+ ![ufw](ufw.png) 
 
 ### 3. Mandatory Access Control (MAC):
 - **AppArmor/SELinux**: Enable and configure AppArmor or SELinux for mandatory access control to restrict system-level access for applications.
 - **Profiles for Critical Services**: Define strict AppArmor/SELinux profiles for critical services to prevent unauthorized actions.
+
+  
 
 #### Key Observations:
 - **Processes in Enforce Mode**: This is the ideal configuration for security because it actively restricts the behavior of applications based on their AppArmor profile.
@@ -126,16 +129,21 @@ This checklist ensures that the system is securely configured, reducing the risk
 - **Unconfined Processes**: These are applications not being controlled by AppArmor, which may pose a security risk. You should consider creating profiles for these services.
 - **Mixed Mode**: For processes in mixed mode, you may want to investigate the profile definitions to make sure they are appropriately restrictive.
 
+   ![armor](apparmor.png)
+
 ### 4. Automatic Updates:
 - **Enable Unattended Upgrades**: Ensure automatic security updates are enabled with unattended-upgrades to minimize vulnerabilities.
 - **Schedule Manual Updates**: Set a weekly or monthly schedule for manual updates for non-security patches.
 - **Verify Update Configuration**: Check /etc/apt/apt.conf.d/50unattended-upgrades for proper configuration.
+   ![umattend](unattended.png)
+  ![umattend](unattended2.png)
 
 ### 5. User Privilege Management:
 - **Least Privilege Principle**: Grant users only the minimum necessary privileges for their roles.
 - **Use sudo for Privileged Access**: Ensure that users who need elevated privileges use sudo instead of logging in as root.
 - **Audit Sudo Access**: Monitor and log all sudo command usage to detect unauthorized privilege escalation.
 - **Regular Review of Users and Groups**: Periodically review system users and group memberships to remove unnecessary access.
+  
 
 ### 6. Network Security:
 - **Intrusion Detection System (IDS)**: Use Snort or OSSEC for real-time monitoring and alerting on suspicious activity.
@@ -157,6 +165,7 @@ Identify and mitigate potential threats that could exploit vulnerabilities withi
   - **Fail2Ban**: Use Fail2Ban to automatically block IP addresses after several failed login attempts.
   - **Limit SSH Access**: Restrict SSH access to trusted IP addresses using the firewall (UFW or iptables).
   - **Two-Factor Authentication**: Implement 2FA for SSH access to add an extra layer of protection.
+    ![threat](threat1.png)
 
 ### Threat 2: Malware Injection via Vulnerable Web Application
 - **Description**: Web applications may be targeted by attackers who exploit vulnerabilities (e.g., SQL injection, XSS) to inject malware or steal sensitive data.
@@ -165,6 +174,7 @@ Identify and mitigate potential threats that could exploit vulnerabilities withi
   - **Web Application Firewall (WAF)**: Use a WAF to filter and monitor HTTP traffic and prevent common web attacks.
   - **Regular Security Audits**: Perform regular security audits and code reviews of the application to find and fix vulnerabilities.
   - **Patch Management**: Regularly update all software packages, including web servers, databases, and CMS.
+   ![threat2](threat2.png)
 
 ### Threat 3: Insider Threat
 - **Description**: Employees or contractors with privileged access may intentionally or unintentionally cause harm by leaking sensitive data or performing unauthorized actions.
