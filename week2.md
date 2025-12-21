@@ -25,7 +25,7 @@ nmon provides an all-in-one view of CPU, memory, disk I/O, network usage, and mo
 
 ### 5. Use ps aux for detailed process status:
 The ps aux command gives you a snapshot of all running processes on the system with detailed information, such as memory and CPU usage, user ownership, and running commands, useful for identifying processes consuming excessive resources.
-![ps aux](ps aux.png)
+![ps aux](psaux.png)
 
 ### 6. Use pstree for visualizing process hierarchies:
 pstree displays processes in a tree format, showing their parent-child relationships. This is helpful for identifying how processes are related and tracing resource-heavy applications back to their origin.
@@ -37,6 +37,21 @@ pstree displays processes in a tree format, showing their parent-child relations
 
 ## Test Scenarios:
 - **Load Testing**: Simulate expected traffic and ensure the system performs well under normal conditions.
+htop
+![htop](htop.png)
+
+iostat
+![iostat](iostat.png)
+
+nmon
+![nmon](nmon.png)
+
+ps aux
+![ps aux](psaux.png)
+
+pstree
+![pstree](pstree.png)
+
 - **Stress Testing**: Push the system beyond normal operational capacity to identify weaknesses (e.g., high load).
 - **Spike Testing**: Simulate sudden traffic spikes to verify system’s ability to handle rapid changes in load.
 - **Endurance Testing**: Test system performance over extended periods to find memory leaks and stability issues.
