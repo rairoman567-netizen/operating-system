@@ -30,27 +30,28 @@ Here’s the installation guide for each selected application via SSH.
    - Install stress-ng:
    - sudo apt update
    - sudo apt install stress-ng
-     ```
+     ![stress](stressng.png)
 
 2. **fio (Disk I/O Benchmark):**
    - Install fio:
    - sudo apt update
    - sudo apt install fio
-     ```
+     ![fio](fio3.png)
+     
 
 3. **iperf3 (Network Benchmark):**
    - Install iperf3
    - sudo apt update
    - sudo apt install iperf3
-    
+    ![iper3](iperf3.png)
 
 4. **nginx (Web Server):**
    - Install nginx
    - sudo apt update
    - sudo apt install nginx
-     ```
+     ![nginx](nginx.png)
 
----
+
 
 ## 3. Expected Resource Profiles:
 For each application, document the anticipated resource usage based on typical workloads. Below is an example of expected resource profiles.
@@ -79,24 +80,26 @@ For performance testing, I want to monitor various system metrics such as CPU, R
 
 - **CPU Usage:** Use `top`, `htop`, or `mpstat` to monitor CPU utilization.
   - Command: `top` or `htop` for interactive monitoring.
-  - Example for `mpstat`: 
-    ```bash
-    mpstat -P ALL 1
-    ```
+  - Example for htop: 
+ ! [htop ](htop3.png)
     This shows CPU usage for all cores.
 
 - **Memory Usage:** Use `free -h` or `vmstat` to monitor memory usage.
   - Command: `free -h` (shows memory usage in human-readable format).
   - Example: `vmstat 1` for real-time memory stats.
+    ![vm stat](vmstat.png)
 
 - **Disk I/O:** Use `iostat`, `iotop`, or `fio` itself to measure disk I/O performance.
   - Command: `iostat -x 1` (to show extended disk I/O stats).
-  - Example: `iotop` for real-time disk I/O monitoring.
+  - Example: iostat
+    ![iostat](iostat3.png)
 
 - **Network Usage:** Use `iftop`, `nload`, or `iperf3` to monitor network bandwidth.
   - Command: `iftop` for real-time bandwidth monitoring.
+  - Example: iftop
+    ![iftop](iftop3.png)
+    ![iftop](iftopdesktop3.png)
   
 
----
 
 By following this structure,  I will ensure that I have a systematic approach to performance testing, proper installation documentation, and a clear strategy for monitoring and analyzing system performance.
