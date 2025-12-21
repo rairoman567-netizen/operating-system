@@ -40,6 +40,9 @@ This phase focuses on securing the server and ensuring all management operations
    
     ![keygen](keygen2.png)
 
+   
+
+    ![restart](restart.png)
 ---
 
 ## 2. Configure a Firewall Permitting SSH from One Specific Workstation Only
@@ -126,6 +129,8 @@ This phase focuses on securing the server and ensuring all management operations
 
 ### Steps Taken:
 - **Before:** The default SSH configuration allows password authentication.
+  
+    ![before](before1.png)
   
   
 - **After:** SSH configuration file has `PasswordAuthentication no` set, and key-based authentication is enabled.
