@@ -53,8 +53,22 @@ pstree
 ![pstree](pstree.png)
 
 - **Stress Testing**: Push the system beyond normal operational capacity to identify weaknesses (e.g., high load).
-- **Spike Testing**: Simulate sudden traffic spikes to verify system’s ability to handle rapid changes in load.
-- **Endurance Testing**: Test system performance over extended periods to find memory leaks and stability issues.
+htop
+![htops](htops.png)
+
+iostat
+![iostat](iostats.png)
+
+nmon
+![nmon](nmons.png)
+
+ps aux
+![ps aux](psauxs.png)
+
+pstree
+![pstree](pstrees.png)
+
+
 
 ## Test Execution:
 - Run multiple tests over a period of time.
@@ -74,9 +88,7 @@ pstree
 - Highlight any performance bottlenecks or failures during the tests.
 - Recommend optimizations based on findings.
 
-## Continuous Monitoring:
-- Set up real-time monitoring dashboards using Grafana.
-- Ensure alerts are triggered for any performance degradation, such as high CPU usage or slow response times.
+
 
 ---
 
@@ -93,6 +105,9 @@ This checklist ensures that the system is securely configured, reducing the risk
 - **Limit User Access**: Restrict SSH access to specific users by configuring AllowUsers in /etc/ssh/sshd_config.
 - **Use Two-Factor Authentication**: Implement 2FA with tools like Google Authenticator or Duo for SSH logins.
 - **Set Idle Timeout**: Implement ClientAliveInterval and ClientAliveCountMax to disconnect idle sessions.
+  ssh
+![ssh](ssh1.png)
+![ssh](ssh2.png)
 
 ### 2. Firewall Configuration:
 - **Restrict Inbound Traffic**: Use a stateful firewall to allow only necessary services and ports (e.g., HTTP, SSH).
