@@ -33,7 +33,12 @@ This phase focuses on securing the server and ensuring all management operations
 4. **Restart SSH Service:**
     
     sudo systemctl restart ssh
+
+   **Evidence**
+   ![keygen](keygen.png)
+
    
+    ![keygen](keygen2.png)
 
 ---
 
@@ -65,6 +70,11 @@ This phase focuses on securing the server and ensuring all management operations
 
 **Outcome:** SSH access will be limited to the specified workstation IP address only, enhancing security.
 
+ ![ufw](ufwserver5.png)
+
+
+ 
+ ![ufw](ufwdesktop.png)
 
 ## 3. Manage Users and Implement Privilege Management
 **Objective:** Create a non-root administrative user with limited privileges and ensure least privilege for user management.
@@ -87,9 +97,12 @@ This phase focuses on securing the server and ensuring all management operations
       sudo -l -U adminuser
   
 
-**Expected Outcome:** The new user will have administrative privileges but will not have unrestricted access to the entire system.
+**Outcome:** The new user will have administrative privileges but will not have unrestricted access to the entire system.
+ ![users](user1.png)
 
 
+ 
+ ![users](user2.png)
 
 ## 4. SSH Access Evidence Showing Successful Connection
 **Objective:** Capture evidence of a successful SSH connection to the server.
