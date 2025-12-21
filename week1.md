@@ -58,7 +58,7 @@ Ubuntu Desktop provides a user-friendly graphical interface while maintaining fu
 
 ## CLI Commands
 ip address 
-![ip adress](ipaddd.png)
+![ip adress](ipadd.png)
 
 ## Conclusion
 Ubuntu Desktop was chosen for its ease of use, stability, and compatibility with the selected server distribution.
