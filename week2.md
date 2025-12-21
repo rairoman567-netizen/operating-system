@@ -10,20 +10,26 @@ The goal is to assess the performance of critical applications and infrastructur
 - Specify acceptable performance thresholds (e.g., response time < 1s, requests per second > 100).
 
 ## Monitoring Tools:
-### 2. Use htop or top for real-time process and resource monitoring:
+### 2. Use htop for real-time process and resource monitoring:
 These tools provide detailed, interactive views of system resource usage, such as CPU, memory, and process consumption. They allow you to monitor system performance in real-time and sort/process data for better analysis.
+![htop](htop.png)
 
 ### 3. Utilize iostat for disk and I/O performance monitoring:
 iostat offers statistics on CPU usage and input/output (I/O) device performance, helping to identify disk bottlenecks and overall I/O activity, which is crucial for diagnosing disk-related performance issues.
+![iostat](iostat.png)
+
 
 ### 4. Use nmon for comprehensive system monitoring:
 nmon provides an all-in-one view of CPU, memory, disk I/O, network usage, and more. It can log performance data for later analysis, making it ideal for continuous or long-term monitoring during performance testing or production use.
+![nmon](nmon.png)
 
 ### 5. Use ps aux for detailed process status:
 The ps aux command gives you a snapshot of all running processes on the system with detailed information, such as memory and CPU usage, user ownership, and running commands, useful for identifying processes consuming excessive resources.
+![ps aux](ps aux.png)
 
 ### 6. Use pstree for visualizing process hierarchies:
 pstree displays processes in a tree format, showing their parent-child relationships. This is helpful for identifying how processes are related and tracing resource-heavy applications back to their origin.
+![pstree](pstree.png)
 
 ## Test Environment:
 - Use a staging environment that mirrors the production environment as closely as possible (including hardware specifications, network conditions, etc.).
