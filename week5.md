@@ -28,23 +28,39 @@ Implement advanced security measures and create monitoring infrastructure for th
 
 1. **AppArmor Configuration**:
    - Enforced AppArmor profiles for Apache2 to restrict service access.
+     ![apache2](1.3.png)
+     
    - Evidence: `apparmor_status` output.
+     ![apparmor](1.2.png)
 
 2. **Unattended Security Updates**:
    - Automatic security updates enabled.
+
+     ![attend2](2.png)
+     
    - Evidence: `/etc/apt/apt.conf.d/20auto-upgrades` settings and dry-run output.
+
+     ![attend](2.2.png)
 
 3. **fail2ban**:
    - SSH protection enabled with `fail2ban` to block brute-force IPs.
    - Evidence: `fail2ban` status and jail configuration file.
+     ![fail2ban](3.png)
+
+     ![fail2ban](3.2.png)
 
 4. **Security Baseline Verification**:
    - Script that verifies all critical security configurations.
    - Evidence: Output showing correct security settings.
 
+     ![security](4.png)
+
+     ![security](4.2.png)
+
 5. **Remote Monitoring**:
    - A script to gather system performance metrics remotely.
    - Evidence: Real-time output showing CPU, memory, and disk I/O usage.
+  !  [monitoring](5.png)
 
 ---
 
