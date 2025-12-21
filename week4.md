@@ -108,8 +108,73 @@ This phase focuses on securing the server and ensuring all management operations
 **Objective:** Capture evidence of a successful SSH connection to the server.
 
 ### Steps Taken:
-
 - After SSH key-based authentication is set up, log into the server using the SSH key from the workstation:
+  
+    ssh roman12@192.168.56.106
+   
 
-  ssh username@server_ip
+- **Screenshot:**
+   A screenshot showing the terminal window with a successful SSH connection. Ensure the prompt displays the user's session, confirming authentication was successful.
+  
+  ![keygen](keygen.png)
+
+   ![keygen](keygen2.png) 
+
+
+## 5. Configuration Files with Before and After Comparisons
+**Objective:** Document configuration changes made to the system for security enhancement.
+
+### Steps Taken:
+- **Before:** The default SSH configuration allows password authentication.
+  
+  
+- **After:** SSH configuration file has `PasswordAuthentication no` set, and key-based authentication is enabled.
+   ![after](after5.1.png)
+
+   ![after](after5.2.png)
+
+### Files to Include:
+- `/etc/ssh/sshd_config` before and after changes.
+- Firewall rules before and after implementing IP restrictions.
+- User permissions configuration before and after adding `adminuser` to the sudo group.
+
+---
+
+## 6. Firewall Documentation Showing Complete Ruleset
+**Objective:** Document all firewall rules applied to restrict access and enhance security.
+
+### Steps Taken:
+1. **Document Rules:**
+ 
+    sudo ufw status verbose
+   
+
+** Outcome:** Clear documentation of firewall rules, ensuring only trusted sources can access SSH.
+
+ ![firewall](6.png)
+
+---
+
+## 7. Remote Administration Evidence Demonstrating Commands Executed via SSH
+**Objective:** Show evidence of remote server administration using SSH.
+
+### Steps Taken:
+1. **Execute Commands Remotely:**
+    - commands executed via SSH:
+     
+      sudo apt update
+      sudo apt upgrade
+      sudo systemctl restart apache2
+  
+
+2. **Screenshot:**
+   A screenshots showing the execution of these commands via SSH. Document each command's purpose (e.g., updating packages, restarting services).
+
+    ![evidence](7.png)
+
+    ![evidence](7.1.png)
+---
+
+## Conclusion
+In this phase, the server was configured with SSH key-based authentication, ensuring enhanced security by eliminating password-based access. A firewall was implemented to restrict SSH access to a specific workstation, and a non-root user was created with administrative privileges. Additionally, evidence of successful SSH access and configuration changes has been documented to support security and administration best practices.
 
