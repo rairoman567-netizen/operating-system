@@ -60,5 +60,11 @@ Ubuntu Desktop provides a user-friendly graphical interface while maintaining fu
 ip address 
 ![ip adress](ipadd.png)
 
+uname 
+![uname](romanuname.png)
+
+lsb_release
+![lsb release](lsb.png)
+
 ## Conclusion
 Ubuntu Desktop was chosen for its ease of use, stability, and compatibility with the selected server distribution.
