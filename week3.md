@@ -28,30 +28,26 @@ Here’s the installation guide for each selected application via SSH.
 
 1. **stress-ng (CPU & RAM Stress Test):**
    - Install stress-ng:
-     ```bash
-     sudo apt update
-     sudo apt install stress-ng
+   - sudo apt update
+   - sudo apt install stress-ng
      ```
 
 2. **fio (Disk I/O Benchmark):**
    - Install fio:
-     ```bash
-     sudo apt update
-     sudo apt install fio
+   - sudo apt update
+   - sudo apt install fio
      ```
 
 3. **iperf3 (Network Benchmark):**
-   - Install iperf3:
-     ```bash
-     sudo apt update
-     sudo apt install iperf3
-     ```
+   - Install iperf3
+   - sudo apt update
+   - sudo apt install iperf3
+    
 
 4. **nginx (Web Server):**
-   - Install nginx:
-     ```bash
-     sudo apt update
-     sudo apt install nginx
+   - Install nginx
+   - sudo apt update
+   - sudo apt install nginx
      ```
 
 ---
@@ -99,12 +95,8 @@ For performance testing, I want to monitor various system metrics such as CPU, R
 
 - **Network Usage:** Use `iftop`, `nload`, or `iperf3` to monitor network bandwidth.
   - Command: `iftop` for real-time bandwidth monitoring.
-  - Example: 
-    ```bash
-    iperf3 -s  # on server
-    iperf3 -c <server-ip>  # on client for measuring network throughput.
-    ```
+  
 
 ---
 
-By following this structure, you will ensure that you have a systematic approach to performance testing, proper installation documentation, and a clear strategy for monitoring and analyzing system performance.
+By following this structure,  I will ensure that I have a systematic approach to performance testing, proper installation documentation, and a clear strategy for monitoring and analyzing system performance.
