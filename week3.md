@@ -81,7 +81,7 @@ For performance testing, I want to monitor various system metrics such as CPU, R
 - **CPU Usage:** Use `top`, `htop`, or `mpstat` to monitor CPU utilization.
   - Command: `top` or `htop` for interactive monitoring.
   - Example for htop: 
- ! [htop ](htop3.png)
+ ![htop ](htop3.png)
     This shows CPU usage for all cores.
 
 - **Memory Usage:** Use `free -h` or `vmstat` to monitor memory usage.
